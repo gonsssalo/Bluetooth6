@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bluetooth6</string>
+    <string name="bt_name">Name</string>
+    <string name="bt_address">Adress</string>
+    <string name="bt_signal_strength">RSSI</string>
+    <string name="name">Device</string>
+    <string name="power">RSSI</string>
+    <string name="number">Number</string>
+    <string name="defini_es_bluetooth">Definições Bluetooth</string>
+    <string name="procurar_dispositivos">Procurar Dispositivos</string>
+</resources>

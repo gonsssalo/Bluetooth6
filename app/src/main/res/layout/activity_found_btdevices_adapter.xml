@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_found_btdevices"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="pt.ipbeja.pdm1.bluetooth6.FoundBTDevices">
+
+
+        <TextView
+            android:id="@+id/textview_bt_scan_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_name"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/textview_bt_scan_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_address"
+            android:textColor="#000000"
+            />
+
+
+        <TextView
+            android:id="@+id/textview_bt_scan_signal_strength"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bt_signal_strength"
+            android:textColor="#000000"
+            />
+
+
+
+
+</LinearLayout>
