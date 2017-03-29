@@ -39,16 +39,21 @@ public class TrakingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_traking);
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-        Intent intent = getIntent();
 
+        // get the name/ RSSI of the device from FoundBTDevices class
+        Intent intent = getIntent();
         String name = intent.getStringExtra("name");
         Integer RSSI = intent.getIntExtra("RSSI", 0);
 
+        //get the text views
         TextView textViewname = (TextView) findViewById(R.id.TextViewNameDeviçe);
         TextView textViewRSSI = (TextView) findViewById(R.id.TextViewPower);
 
+        //write into the text views
         textViewname.setText( "Dispositivo: " + name);
         textViewRSSI.setText("RSSI: " + RSSI.toString() + "dbm");
+
+        //start discovery
         displayListOfFoundDevices();
     }
     private void displayListOfFoundDevices() {
@@ -72,21 +77,23 @@ public class TrakingActivity extends AppCompatActivity {
 
                     // Create the device object and add it to the arrayList of devices
                     BluetoothObject bluetoothObject = new BluetoothObject();
-
-
                     bluetoothObject.setBluetooth_name(device.getName());
                     bluetoothObject.setBluetooth_address(device.getAddress());
                     bluetoothObject.setBluetooth_rssi(rssi);
 
+                    //get devices Adresses
                     String MacAdress = device.getAddress();
 
+                    //get device adress from FoundBTDevices class
                     intent = getIntent();
-
                     String Adress = intent.getStringExtra("Adress");
+
+                   //get text views
                     TextView txvw = (TextView) findViewById(R.id.TextViewPower);
                     TextView textViewNumber = (TextView) findViewById(R.id.TextViewNumber);
 
                     boolean sucess = false;
+                    // compare Adress from FoundBTDevices class with the devices the discovery finds
                     if (Adress.equalsIgnoreCase(MacAdress)) {
                         try {
                             textViewNumber.setText("size: " + RSSIRegisterList.size() + " RSSI: " + rssi);
@@ -160,7 +167,7 @@ public class TrakingActivity extends AppCompatActivity {
 
     }
 
-
+// Convert dbm to meters
     protected double calculateDistance( double rssi) {
 
         int txPower = 64;
@@ -208,7 +215,7 @@ protected void onResume(){
     super.onResume();
     handler.postDelayed(runnable, 3000);
 }
-
+//stop discovery and inicialize it
     private void updateList(){
 
         mBluetoothAdapter.cancelDiscovery();
