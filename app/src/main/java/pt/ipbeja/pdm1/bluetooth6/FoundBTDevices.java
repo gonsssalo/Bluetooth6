@@ -39,7 +39,7 @@ import java.util.ArrayList;
 
         private void displayListOfFoundDevices() {
 
-            Toast.makeText(this, "displayListOfFoundDevices()", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(this, "displayListOfFoundDevices()", Toast.LENGTH_SHORT).show();
             arrayOfFoundBTDevices = new ArrayList<>();
 
 
@@ -126,7 +126,7 @@ import java.util.ArrayList;
 
 
 
-            Toast.makeText(this, "ResumeStartDiscovery", Toast.LENGTH_SHORT).show();
+         //   Toast.makeText(this, "ResumeStartDiscovery", Toast.LENGTH_SHORT).show();
             mBluetoothAdapter1.startDiscovery();
 
 
@@ -139,7 +139,7 @@ import java.util.ArrayList;
 
             super.onPause();
             mBluetoothAdapter1.cancelDiscovery();
-            Toast.makeText(this, "cancelDiscovery", Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(this, "cancelDiscovery", Toast.LENGTH_SHORT).show();
 
         }
 

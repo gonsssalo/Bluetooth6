@@ -24,18 +24,19 @@
 
         android:text="@string/power"
         />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/TextViewNumber"
-        android:text="@string/number"
-        />
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/TextViewNumber"
+         android:text="@string/number"
+         />
+         -->
+     <!--  <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/TextViewName"
+         android:text="@string/name"
+         /> -->
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/TextViewName"
-        android:text="@string/name"
-        />
 
 </LinearLayout>

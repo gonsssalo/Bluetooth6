@@ -26,13 +26,6 @@
             />
 
 
-        <TextView
-            android:id="@+id/textview_bt_scan_signal_strength"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/bt_signal_strength"
-            android:textColor="#000000"
-            />
 
 
 

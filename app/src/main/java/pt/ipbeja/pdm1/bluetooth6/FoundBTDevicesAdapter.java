@@ -41,12 +41,12 @@ class FoundBTDevicesAdapter extends ArrayAdapter<BluetoothObject> {
         // 3. Get the widgets from the rowView
         TextView bt_name = (TextView) rowView.findViewById(R.id.textview_bt_scan_name);
         TextView bt_address = (TextView) rowView.findViewById(R.id.textview_bt_scan_address);
-        TextView bt_signal_strength = (TextView) rowView.findViewById(R.id.textview_bt_scan_signal_strength);
+       // TextView bt_signal_strength = (TextView) rowView.findViewById(R.id.textview_bt_scan_signal_strength);
 
         // 4. Set the text for each widget
         bt_name.setText(bluetoothObject.getBluetooth_name());
         bt_address.setText("address: " + bluetoothObject.getBluetooth_address());
-        bt_signal_strength.setText("RSSI: " + bluetoothObject.getBluetooth_rssi() + "dbm");
+      //  bt_signal_strength.setText("RSSI: " + bluetoothObject.getBluetooth_rssi() + "dbm");
 
 
 

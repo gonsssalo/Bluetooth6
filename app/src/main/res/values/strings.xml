@@ -6,6 +6,6 @@
     <string name="name">Device</string>
     <string name="power">RSSI</string>
     <string name="number">Number</string>
-    <string name="defini_es_bluetooth">Definições Bluetooth</string>
-    <string name="procurar_dispositivos">Procurar Dispositivos</string>
+    <string name="defini_es_bluetooth">Tools Bluetooth</string>
+    <string name="browse_devices">Browse Devices</string>
 </resources>
